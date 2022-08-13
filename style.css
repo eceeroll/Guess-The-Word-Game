@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Comfortaa&family=Permanent+Marker&family=Roboto:wght@500&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background: conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 470px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.container h1 {
+    font-size: 34px;
+    border-bottom: 1px solid rgb(199, 172, 172);
+    font-weight: 600;
+    /* margin: 10px 0px 10px 15px; */
+    padding: 20px;
+    margin-left: 29px;
+}
+
+.icon {
+    position: absolute;
+    top: 20.5px;
+    left: 17px;
+    font-size: 30px;
+    color: blue; 
+}
+
+.content {
+    margin: 10px 0px 20px 39px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: cebter;
+    flex-wrap: wrap;
+}
+
+.inputs input {
+    height: 60px;
+    width: 62px;
+    margin: 5px;
+    border: solid 1px rgb(146, 146, 241);
+    background: none;
+    border-radius: 5px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 500;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+
+.inputs input:first-child {
+    margin-left: 0;
+}
+
+.details {
+    margin: 20px 0 15px;
+}
+
+.details p {
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.reset-btn {
+    width: 90%;
+    padding: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #8ecae6;
+    font-size: 17px;
+    font-family: inherit;
+    border-radius: 5px;
+    color: darkblue;
+    font-weight:600;
+    margin-left: 0;
+    
+}
+
+#type-input { /* input will not display on the screen */
+    z-index: -999;
+    opacity: 0;
+    position: absolute;   
+}
+
+.alert {
+    padding: 10px;
+    color: white;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+.alertarea {
+    position: absolute;
+    top: 82px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
